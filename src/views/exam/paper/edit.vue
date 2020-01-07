@@ -111,7 +111,7 @@ export default {
       for (let i = 0; i <= parseInt(score); i++) {
         array.push(i.toString())
       }
-      if (score.indexOf('.') !== -1) {
+      if ((score+"").indexOf('.') !== -1) {
         array.push(score)
       }
       return array
