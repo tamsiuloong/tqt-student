@@ -115,7 +115,7 @@ export default {
 
           loginApi.login(this.loginForm).then(function (result) {
             if (result.access_token) {
-              Cookies.set("TOKEN", result.access_token, 1);
+              Cookies.set("token", result.access_token, 1);
               _this.setUserName(_this.loginForm.userName)
               _this.$router.push({ path: '/' })
             } else {

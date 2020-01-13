@@ -4,7 +4,7 @@ import Cookies from 'js-cookie'
 // 添加请求拦截器
 axios.interceptors.request.use(function (config) {
     // 在发送请求之前做些什么
-    let access_token = Cookies.get("TOKEN");
+    let access_token = Cookies.get("token");
           if (access_token) {
             var params = config.params;
             if (!params) {
