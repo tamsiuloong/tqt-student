@@ -1,21 +1,21 @@
 <template>
   <div style="margin-top: 10px">
-    <el-row>
-      <el-carousel :interval="5000" arrow="always" type="card">
-        <el-carousel-item >
-          <img src="@/assets/carousel/WechatIMG19.jpeg" class="carousel-img">
-        </el-carousel-item>
-        <el-carousel-item >
-          <img src="@/assets/carousel/WechatIMG20.jpeg" class="carousel-img">
-        </el-carousel-item>
-        <el-carousel-item >
-          <img src="@/assets/carousel/WechatIMG21.jpeg" class="carousel-img">
-        </el-carousel-item>
-        <el-carousel-item >
-          <img src="@/assets/carousel/WechatIMG22.jpeg" class="carousel-img">
-        </el-carousel-item>
-      </el-carousel>
-    </el-row>
+<!--    <el-row>-->
+<!--      <el-carousel :interval="5000" arrow="always" type="card">-->
+<!--        <el-carousel-item >-->
+<!--          <img src="@/assets/carousel/WechatIMG19.jpeg" class="carousel-img">-->
+<!--        </el-carousel-item>-->
+<!--        <el-carousel-item >-->
+<!--          <img src="@/assets/carousel/WechatIMG20.jpeg" class="carousel-img">-->
+<!--        </el-carousel-item>-->
+<!--        <el-carousel-item >-->
+<!--          <img src="@/assets/carousel/WechatIMG21.jpeg" class="carousel-img">-->
+<!--        </el-carousel-item>-->
+<!--        <el-carousel-item >-->
+<!--          <img src="@/assets/carousel/WechatIMG22.jpeg" class="carousel-img">-->
+<!--        </el-carousel-item>-->
+<!--      </el-carousel>-->
+<!--    </el-row>-->
 <!--    <el-row class="app-item-contain">-->
 <!--      <h3 class="index-title-h3" style="border-left: solid 10px #3651d4;">任务中心</h3>-->
 <!--      <div style="padding-left: 15px">-->

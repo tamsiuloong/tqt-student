@@ -33,7 +33,7 @@
               <el-row>
                 <QuestionAnswerShow :qType="questionItem.questionType" :question="questionItem"  :answer="answer.answerItems[questionItem.itemOrder-1]"/>
               </el-row>
-              <el-row v-if="answer.answerItems[questionItem.itemOrder-1].doRight === null">
+              <el-row v-if="answer.answerItems[questionItem.itemOrder-1] && answer.answerItems[questionItem.itemOrder-1].doRight === null">
                 <label style="color: #e6a23c">批改：</label>
                 <el-radio-group v-model="answer.answerItems[questionItem.itemOrder-1].score">
                   <el-radio  v-for="item in scoreSelect(questionItem.score)"  :key="item"  :label="item" >
