@@ -55,8 +55,8 @@ const request = function (loadtip, query) {
       if (loadtip) {
         loading.close()
       }
-      if(e.response.data.error==='invalid_token'){
-        window.location.href="/#/login";
+      if(e.response.data.code===401){
+        vue.prototype.$$router.push({ path: '/login' })
       }
       // vue.prototype.$message.error(e.message)
       return Promise.reject(e)
