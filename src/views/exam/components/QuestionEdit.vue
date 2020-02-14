@@ -43,7 +43,7 @@
     <div v-else-if="qType==5" v-loading="qLoading">
       <div class="q-title" v-html="question.title"/>
       <div>
-        <el-input v-model="answer.content" type="textarea" rows="5"  @change="answer.completed = true"/>
+        <el-input v-model="answer.content" onpaste="return false" type="textarea" rows="5"  @change="answer.completed = true"/>
       </div>
     </div>
     <div v-else>
