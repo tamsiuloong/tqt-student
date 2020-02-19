@@ -58,6 +58,10 @@
         <span>{{question.score}}</span>
       </div>
       <div class="question-answer-show-item">
+        <span class="question-show-item">得分：</span>
+        <span>{{answer.score}}</span>
+      </div>
+      <div class="question-answer-show-item">
         <span class="question-show-item">难度：</span>
         <el-rate disabled v-model="question.difficult" class="question-show-item"></el-rate>
       </div>
