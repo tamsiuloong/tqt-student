@@ -1,90 +1,60 @@
-# exam-student
-
-## Pre Command
-```
-npm config set sass_binary_site https://npm.taobao.org/mirrors/node-sass/
-npm install --registry https://registry.npm.taobao.org  
-```
 
 
-## Project setup
-```
-npm install
+# 教学跟踪管理系统-学生在线考试ui
+
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+https://gitee.com/tamsiuloong/tqt-exam.git
 
-### Compiles and minifies for production
 ```
-npm run build
+# 技术体系
 ```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-
-## Ngix gzip
-```
-gzip on;
-gzip_min_length 1k;
-gzip_comp_level 1;
-gzip_types text/plain application/javascript application/x-javascript text/css application/xml text/javascript application/x-httpd-php image/bmp application/x-bmp image/x-ms-bmp application/vnd.ms-fontobject font/ttf font/opentype font/x-woff;
-gzip_vary on;
-gzip_disable "MSIE [1-6]\.";
-gzip_buffers 32 4k;
-gzip_http_version 1.0;
-```
-
-## Ngix config
-```
-server {
-    listen       80;
-    server_name  student;
-    root         /usr/local/exam/student;
-    index        index.html;
-    error_page   500 502 503 504  /50x.html;
-    location = /50x.html {
-        root   html;
-    }
-    location /api/ {
-       proxy_pass  http://localhost:8001;
-    }
-}
+服务器:springboot+mysql
+前 端:vue+iviewui+elementui
 ```
 
 
-## Ngix Https config
+
+# 功能介绍
+
+这套系统用于本人培训工作中管理系统，初衷是为了快速了解学员的吸收情况，减少公司和本人的工作量。
+
+- 在线考试
+
+![image-20200219114723746](assets/image-20200219114723746.png)
+
+
+- 教学管理
+
+  - 试卷管理
+  - 题目管理
+
+
+![image-20200219114828135](assets/image-20200219114828135.png)
+
+![image-20200219114925852](assets/image-20200219114925852.png)
+
+![image-20200219145203701](assets/image-20200219145203701.png)
+
+## 其他系统
+
 ```
-server {
-    listen 85;
-    listen 8085 ssl;
-    server_name  www.alvisu.com;
-    root         /usr/local/exam/link/exam-student;
-    index        index.html;
-    error_page   500 502 503 504  /50x.html;
-    ssl_certificate /usr/local/exam/ssl/nginx.crt;
-    ssl_certificate_key /usr/local/exam/ssl/nginx.key;
-    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
-    ssl_ciphers ALL:!DH:!EXPORT:!RC4:+HIGH:+MEDIUM:!eNULL;
-    ssl_prefer_server_ciphers on;
-    location = /50x.html {
-        root   html;
-    }
-    location /api/ {
-       proxy_pass  https://www.alvisu.com:8001;
-    }
-}
+
+教学跟踪管理系统-admin管理ui
+https://gitee.com/tamsiuloong/tqt-admin.git
+
+教学跟踪管理系统-api服务器
+https://gitee.com/tamsiuloong/tqt-api.git
+
+
+
 ```
+
+
+## 数据库脚本
+```
+需要完整数据库sql请关注:
+今日头条:JAVA在召唤
+```
+
+
